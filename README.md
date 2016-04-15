@@ -4,9 +4,7 @@
 （2）可以自定义各种的样式   
 （3）对于一些细节问题进行很好的处理，比如拖曳时，可以防止产生不必要的误击作用   
 
-用法：    
-
-<script type="text/javascript">    
+用法：        
 	$("#container").Jsdrag({    
 		itemDiv:'',//item的类名,必须设定         
 		dragDiv:'',//drag的div的类名 必须设定    
@@ -16,6 +14,5 @@
 		theDivSty:{}，//拖曳过程中 拖曳的item的css样式选择设置，不设置启用插件默认样式       
 		msg:''//鼠标进入的drag拖曳框时显示的信息，默认是:'按下鼠标拖曳'
 	});
-</script>
 
 具体的用法可以参考test下的index.html
