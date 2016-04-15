@@ -58,6 +58,7 @@
             'theDivSty':{
               'position':"absolute",
               'width':"100%",
+              'height':"calc(100%)",//获取父级的高度
               "z-index":"1000",
               "background-color":"#aaa",
               "filter":"alpha(opacity=50)", 
@@ -122,9 +123,7 @@
               theDivHalf = theDivHeight/2;
 
               // 动态设置拖曳框的样式
-              theDiv.css(setting.theDivSty).css({
-                'height':theDivHeight 
-              }).text('');
+              theDiv.css(setting.theDivSty).text('');
 
               itemDiv.attr('class','item-dash').css(setting.itemdashSty).css({
                 left: preleft+'px',
