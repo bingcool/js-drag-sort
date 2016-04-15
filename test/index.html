@@ -1,78 +1,77 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-	<meta charset="UTF-8">
-	<title>Jsdrag实现item的拖曳排序</title>
-	<script type="text/javascript" src="../node_modules/jquery/dist/jquery.min.js"></script>
-	<script type="text/javascript" src="../src/Jsdrag.js"></script>
-	<style type="text/css">
-	#container {
-		position: relative;
-		margin:0 auto;
-		width:515px;
-		height:600px;
-		overflow:scroll;
-		padding: 5px;
-		border: 1px solid #f00;
-		
-	}
-	.item { 
-		position:relative; 
-		width: 100%; 
-		height: 100px;
-		margin-bottom: 5px; 
-		border: 1px solid blue; 
-		background: #ccc; 
-	}
-	.item-drag {
-		position:relative;
-		width: 100%; 
-		height: 30px;
-		background: #fff;
-		cursor:crosshair;	
-	}
-	</style>
+    <meta charset="UTF-8">
+    <title>Jsdrag实现item的拖曳排序</title>
+    <script type="text/javascript" src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="../src/Jsdrag.js"></script>
+    <style type="text/css">
+    #container {
+        position: relative;
+        margin:0 auto;
+        width:515px;
+        height:600px;
+        overflow:scroll;
+        padding: 5px;
+        border: 1px solid #f00;
+        
+    }
+    .item { 
+        position:relative; 
+        width: 100%; 
+        height: 100px;
+        margin-bottom: 5px; 
+        border: 1px solid blue; 
+        background: #ccc; 
+    }
+    .item-drag {
+        position:relative;
+        width: 100%; 
+        height: 30px;
+        background: #fff;
+        cursor:crosshair;   
+    }
+    </style>
 </head>
 <body>
-	<div id="container">
-		<div class="item">
-			<div class="item-drag"></div>
-			<div class="item-content">测试1</div>
-		</div>
-		<div class="item">
-			<div class="item-drag"></div>
-			<div class="item-content">测试2</div>
-		</div>
-		<div class="item">
-			<div class="item-drag"></div>
-			<div class="item-content">测试3</div>
-		</div>
-		<div class="item">
-			<div class="item-drag"></div>
-			<div class="item-content">测试4</div>
-		</div>
-		<div class="item">
-			<div class="item-drag"></div>
-			<div class="item-content">测试5</div>
-		</div>
-		<div class="item">
-			<div class="item-drag"></div> 
-			<div class="item-content">测试6</div>
-		</div>
-		<div class="item">
-			<div class="item-drag"></div>
-			<div class="item-content">测试7</div>
-		</div>
-		<div class="item">
-			<div class="item-drag"></div>
-			<div class="item-content">测试8</div>
-		</div>
-	</div>
-
+    <div id="container">
+        <div class="item">
+            <div class="item-drag"></div>
+            <div class="item-content">测试1</div>
+        </div>
+        <div class="item">
+            <div class="item-drag"></div>
+            <div class="item-content">测试2</div>
+        </div>
+        <div class="item">
+            <div class="item-drag"></div>
+            <div class="item-content">测试3</div>
+        </div>
+        <div class="item">
+            <div class="item-drag"></div>
+            <div class="item-content">测试4</div>
+        </div>
+        <div class="item">
+            <div class="item-drag"></div>
+            <div class="item-content">测试5</div>
+        </div>
+        <div class="item">
+            <div class="item-drag"></div> 
+            <div class="item-content">测试6</div>
+        </div>
+        <div class="item">
+            <div class="item-drag"></div>
+            <div class="item-content">测试7</div>
+        </div>
+        <div class="item">
+            <div class="item-drag"></div>
+            <div class="item-content">测试8</div>
+        </div>
+    </div>
 <script type="text/javascript">
-	$("#container").Jsdrag({
-		itemDiv:'item',
-		dragDiv:'item-drag',
+    $("#container").Jsdrag({
+        itemDiv:'item',
+        dragDiv:'item-drag',
 });
 </script>
 </body>
