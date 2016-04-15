@@ -5,10 +5,10 @@
 （3）对于一些细节问题进行很好的处理，比如拖曳时，可以防止产生不必要的误击作用   
 
 用法：        
-    $("#container").Jsdrag({ 
+    $("#container").Jsdrag({           
         //item的类名,必须设定            
         itemDiv:string,   
-        //drag的div的类名 必须设定             
+        //drag的div的类名, 必须设定             
         dragDiv:string,       
         //虚框css的样式，选择设置，不设置启用插件默认样式       
         tempSty:{},       
